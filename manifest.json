@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Borrador de Caché",
+  "version": "1.0",
+  "description": "Extensión para borrar caché, cookies y datos de navegación de Chrome con un solo clic",
+  "permissions": [
+    "cookies",
+    "browsingData"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Borrar Caché",
+    "default_icon": "images/icon-48.png"
+  },
+  "icons": {
+      "256": "images/icon-256.png",
+      "128": "images/icon-128.png",
+      "48": "images/icon-48.png",
+      "16": "images/icon-16.png"
+    },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
